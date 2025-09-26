@@ -22,3 +22,18 @@ export type Group = {
   members: GroupMember[];
   admins: GroupMember[];
 };
+
+export type ChannelMember = {
+  id: string;
+  name: string;
+  externalId: string;
+  sui: string;
+};
+
+export type Channel = {
+  id: string;
+  name: string;
+  members: ChannelMember[];
+};
+
+export type ChannelsResponse = Channel[];
